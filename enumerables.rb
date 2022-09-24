@@ -13,7 +13,7 @@ end
 # with the names of each spicy food
 def get_names(spicy_foods)
   # your code here
- spicy_foods.collect do |s|
+ spicy_foods.map do |s|
     s[:name]
   end
 end
@@ -51,8 +51,9 @@ def get_spicy_food_by_cuisine(spicy_foods, cuisine)
   spicy_foods.find do |food|
     food[:cuisine] == cuisine
   end
+  
 end
-# puts get_spicy_food_by_cuisine(spicy_foods, "Sichuan")
+puts get_spicy_food_by_cuisine(spicy_foods, "Aus")
 
 # Given an array of spicy foods, **return an array of hashes** 
 # sorted by heat level from lowest to highest
