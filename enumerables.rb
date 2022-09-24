@@ -13,7 +13,7 @@ end
 # with the names of each spicy food
 def get_names(spicy_foods)
   # your code here
- spicy_foods.map do |s|
+ spicy_foods.collect do |s|
     s[:name]
   end
 end
